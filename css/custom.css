@@ -1,0 +1,38 @@
+/* ===== 猫爪鼠标光标 ===== */
+
+body {
+    background: pink !important;
+    font-family: "Microsoft YaHei";
+
+    cursor: url('/img/pinkcursor.png') 24 24, auto !important;
+
+    animation: fadein 1s;
+}
+
+
+/* 网站标题颜色 */
+
+#site-title {
+    color: black !important;
+}
+
+
+/* 页面淡入 */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+a,
+button,
+input[type="button"],
+input[type="submit"],
+.post-button {
+    cursor: url('/img/pinkhand.png') 8 8, pointer !important;
+}
