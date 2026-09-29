@@ -1,7 +1,6 @@
-/* ===== 猫爪鼠标光标 ===== */
-
 body {
-    background: pink !important;
+    background: #ffd6e8 !important;
+
     font-family: "Microsoft YaHei";
 
     cursor: url('/img/pinkcursor.png') 24 24, auto !important;
@@ -10,29 +9,793 @@ body {
 }
 
 
-/* 网站标题颜色 */
+
+/* ===== 导航栏 水晶粉渐变 ===== */
+
+.header,
+#header,
+.site-header {
+
+    background-image:
+        radial-gradient(
+            rgba(255,255,255,0.45) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            135deg,
+            #ffc1df,
+            #ffe4f2,
+            #e8d7ff
+        ) !important;
+
+
+    background-size:
+        8px 8px,
+        100% 100%;
+
+
+    box-shadow:
+        0 3px 15px rgba(255,182,215,0.5),
+        inset 0 1px 10px rgba(255,255,255,0.8);
+
+
+    border-bottom:
+        2px solid rgba(255,255,255,0.8);
+}
+
+#web_bg {
+    background: #fdf1f5 url('/img/beijing.png') center center / cover fixed no-repeat !important;
+}
+
+/* 强制替换全站背景 */
+
+body {
+    background-image: url('/img/beijing.png') !important;
+    background-color: #fdf1f5 !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+
+#page,
+#web_bg,
+#content-inner,
+.layout {
+    background: transparent !important;
+}
+
+
+/* ===== 网站标题 ===== */
 
 #site-title {
-    color: black !important;
+
+    color: #222 !important;
+
 }
 
 
-/* 页面淡入 */
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
+/* ===== 文章顶部封面 ===== */
 
-    to {
-        opacity: 1;
-    }
+.post-bg,
+.post-header,
+.banner {
+
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffb6d9,
+            #ffdff0,
+            #e8d7ff
+        )
+        !important;
+
+
 }
+
+
+
+/* ===== 文章卡片 ===== */
+
+.post {
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(255,170,210,0.25);
+
+}
+
+
+
+/* ===== 链接 ===== */
+
+a {
+
+    color:
+    #ff69b4;
+
+}
+
+
+
+/* 鼠标经过 */
+
+a:hover {
+
+    color:
+    #ff1493;
+
+}
+
+
+
+/* ===== 点击按钮小手 ===== */
+
 
 a,
 button,
 input[type="button"],
 input[type="submit"],
 .post-button {
-    cursor: url('/img/pinkhand.png') 8 8, pointer !important;
+
+
+    cursor:
+    url('/img/pinkhand.png') 8 8,
+    pointer !important;
+
+}
+
+
+
+/* ===== 页面淡入 ===== */
+
+
+@keyframes fadein {
+
+    from {
+
+        opacity:0;
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* ===== 图片圆角 ===== */
+
+
+img {
+
+    border-radius:
+    12px;
+
+}
+
+
+
+/* ===== 选中文字 ===== */
+
+
+::selection {
+
+    background:
+    #ffb6d9;
+
+    color:
+    white;
+
+}
+
+
+
+/* ===== 滚动条 Y2K ===== */
+
+
+::-webkit-scrollbar {
+
+    width:
+    10px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+    linear-gradient(
+        #ffc1df,
+        #e8d7ff
+    );
+
+
+    border-radius:
+    10px;
+
+}
+
+/* 文章页面顶部粉色 */
+
+#page-header.post-bg {
+    background-image: 
+        135deg,
+        #ffc1df,
+        #ffe4f2
+      !important;
+}
+
+
+/* =========================
+   Fusion Pixel 中文像素字体
+   ========================= */
+
+@font-face {
+    font-family: "FusionPixel";
+    src: url("/fonts/fusion-pixel-10px-monospaced-zh_hans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* 首页标题 */
+#site-title {
+    font-family: "FusionPixel" !important;
+
+    font-size: 55px !important;
+    font-weight: normal !important;
+
+    letter-spacing: 3px;
+
+    color: #ff8fbd !important;
+
+    text-shadow:
+        2px 0px #ffffff,
+        -2px 0px #ffffff,
+        0px 2px #ffffff,
+        0px -2px #ffffff;
+}
+
+
+/* 首页副标题 */
+#site-subtitle {
+    font-family: "FusionPixel" !important;
+
+    font-size: 18px !important;
+
+    letter-spacing: 2px;
+
+    color: #b28bbd !important;
+}
+
+/* =================================
+   qi Y2K Pixel Card
+   Cream White + Sakura Pink
+================================= */
+
+
+/* 卡片主体 */
+
+#recent-posts .recent-post-item,
+.card-widget,
+#post,
+#page {
+
+    background: rgba(255,252,254,0.97) !important;
+
+    border: 3px solid #f2a9c4 !important;
+
+    border-radius: 5px !important;
+
+
+    box-shadow:
+
+    0 0 0 3px #ffffff,
+
+    5px 5px 0 #ffd0df,
+
+    8px 8px 20px rgba(242,169,196,.25) !important;
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/* 像素窗口顶部 */
+
+#recent-posts .recent-post-item::before,
+.card-widget::before,
+#post::before,
+#page::before {
+
+
+    content:"♡  qi.exe  ♡";
+
+
+    display:block;
+
+
+    height:26px;
+
+
+    line-height:26px;
+
+
+    padding-left:12px;
+
+
+    margin-bottom:15px;
+
+
+    background:#fff0f6;
+
+
+    border-bottom:2px dashed #f3b5cf;
+
+
+    color:#e982aa;
+
+
+    font-size:12px;
+
+
+    letter-spacing:3px;
+
+
+}
+
+
+
+/* =================================
+   Y2K Pixel Avatar Window
+================================= */
+
+
+.avatar-img {
+
+    border-radius: 4px !important;
+
+    border: 4px solid #f2a9c4 !important;
+
+
+    box-shadow:
+
+    0 0 0 3px #ffffff,
+
+    0 0 0 6px #ffd0df,
+
+    6px 6px 0 #f2a9c4 !important;
+
+
+    padding:4px;
+
+    background:#fff5f8;
+
+}
+
+
+
+/* 头像所在窗口 */
+
+#aside-content .avatar-img {
+
+    position:relative;
+
+}
+
+
+
+/* 头像外层像素装饰 */
+
+#aside-content .avatar {
+
+    background:#fff7fa;
+
+    border:
+
+    3px solid #f2a9c4;
+
+
+    padding:8px;
+
+
+    box-shadow:
+
+    inset 0 0 0 2px white,
+
+    5px 5px 0 #ffd0df;
+
+
+}
+
+
+
+/* 小像素按钮 */
+
+#aside-content .avatar::before {
+
+
+    content:"♡ PIXEL USER ♡";
+
+
+    display:block;
+
+
+    text-align:center;
+
+
+    font-size:10px;
+
+
+    color:#e982aa;
+
+
+    letter-spacing:2px;
+
+
+    margin-bottom:6px;
+
+
+}
+
+
+
+/* 小星星装饰 */
+
+#recent-posts .recent-post-item::after,
+.card-widget::after {
+
+
+    content:"✦";
+
+
+    position:absolute;
+
+
+    right:18px;
+
+
+    top:38px;
+
+
+    color:#f0a3bf;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+/* 标题 */
+
+.article-title {
+
+    color:#e982aa !important;
+
+    font-weight:bold;
+
+}
+
+
+
+/* 日期信息 */
+
+.article-meta {
+
+    color:#d99aaa !important;
+
+}
+
+
+
+/* 正文 */
+
+.article-entry {
+
+    color:#777 !important;
+
+}
+
+
+
+/* 标签 */
+
+.tag-cloud-list a {
+
+
+    background:#fff6fa !important;
+
+
+    border:2px solid #f2a9c4 !important;
+
+
+    border-radius:4px !important;
+
+
+    color:#df82a8 !important;
+
+
+    box-shadow:
+
+    3px 3px 0 #ffd0df;
+
+
+}
+
+
+
+/* 标签 hover */
+
+.tag-cloud-list a:hover {
+
+
+    background:#ffeaf2 !important;
+
+
+}
+
+
+
+/* 头像框 */
+
+.avatar-img {
+
+
+    border:
+
+    3px solid #f2a9c4 !important;
+
+
+    box-shadow:
+
+    4px 4px 0 #ffd0df,
+
+
+    inset 0 0 0 3px white !important;
+
+
+}
+
+
+
+/* 鼠标经过 */
+
+#nav a:hover {
+
+    color:#ff5f9d !important;
+
+}
+
+/* ===== Y2K 粉色 Footer ===== */
+
+/* 底部背景 */
+#footer {
+    background: #fff0f6 !important;
+}
+
+
+/* 底部文字 */
+#footer,
+#footer a {
+    color: #ff8fbd !important;
+}
+
+
+/* Follow Me 按钮 */
+#card-info-btn {
+    background: #ffb6d5 !important;
+    color: white !important;
+    border: 2px solid #ff8fbd !important;
+}
+
+
+/* 其他蓝色按钮 */
+.button--animated {
+    background: #ffb6d5 !important;
+}
+
+/* ===== 顶部 Y2K 像素字体 ===== */
+
+
+/* 加载像素字体 */
+
+@font-face {
+
+    font-family: "qi-pixel";
+
+    src: url("/fonts/fusion-pixel-10px-monospaced-zh_hans.ttf");
+
+}
+
+
+/* 网站标题 */
+
+#site-title {
+
+    font-family: "qi-pixel" !important;
+
+    color: #e982aa !important;
+
+    text-shadow:
+
+    2px 2px 0 #ffd0df !important;
+
+}
+
+
+/* 导航栏 */
+
+#nav a {
+
+    font-family: "qi-pixel" !important;
+
+    color: #e982aa !important;
+
+    font-size: 15px !important;
+
+    text-shadow:
+
+    1px 1px 0 #ffd0df !important;
+
+}
+
+
+/* 鼠标经过 */
+
+#nav a:hover {
+
+    color:#ff6f9f !important;
+
+}
+
+/* ===== Post标题 Y2K像素粉色 ===== */
+
+.post-title {
+
+    font-family: "qi-pixel" !important;
+
+    color: #e982aa !important;
+
+    font-size: 32px !important;
+
+    font-weight: normal !important;
+
+    text-shadow:
+    2px 2px 0 #ffd0df !important;
+
+}
+
+/* 首页文章标题 Y2K像素粉色 */
+
+.recent-post-info .article-title {
+
+    font-family: "qi-pixel" !important;
+
+    color: #e982aa !important;
+
+    font-size: 22px !important;
+
+    font-weight: normal !important;
+
+    text-shadow:
+    2px 2px 0 #ffd0df !important;
+
+}
+
+/* ===== 导航 hover 蓝色下划线取消 ===== */
+
+#nav a:hover::after {
+
+    background-color: #f2a9c4 !important;
+
+}
+
+
+#nav .active a::after {
+
+    background-color: #f2a9c4 !important;
+
+}
+
+
+/* hover文字颜色 */
+
+#nav a:hover {
+
+    color: #ff8fb5 !important;
+
+}
+
+/* ===== Y2K 浅粉像素格子背景 ===== */
+
+#recent-posts .recent-post-item,
+.card-widget,
+#post,
+#page {
+
+    background-color: #fffafd !important;
+
+    background-image:
+    linear-gradient(
+        rgba(242,169,196,.12) 1px,
+        transparent 1px
+    ),
+    linear-gradient(
+        90deg,
+        rgba(242,169,196,.12) 1px,
+        transparent 1px
+    ) !important;
+
+    background-size:
+    20px 20px !important;
+
+}
+
+/* ===== qi Y2K Final Color Fix ===== */
+
+:root {
+
+    --anzhiyu-theme: #e982aa !important;
+
+    --anzhiyu-main: #e982aa !important;
+
+    --heo-main: #e982aa !important;
+
+}
+
+
+a:hover,
+#post a:hover,
+.article-entry a:hover,
+.card-widget a:hover,
+#aside-content a:hover {
+
+    color:#ff8fb5 !important;
+
+}
+
+
+#nav a::after,
+#nav a:hover::after {
+
+    background:#f2a9c4 !important;
+
+}
+
+
+.tag-cloud-list a:hover {
+
+    background:#ffeaf2 !important;
+
+    color:#e982aa !important;
+
+    border-color:#e982aa !important;
+
+}
+
+
+::selection {
+
+    background:#ffd0df !important;
+
+    color:#8f4f68 !important;
+
 }
