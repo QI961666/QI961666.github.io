@@ -74,8 +74,6 @@ body {
 
 }
 
-
-
 /* ===== 文章顶部封面 ===== */
 
 .post-bg,
@@ -798,4 +796,103 @@ a:hover,
 
     color:#8f4f68 !important;
 
+}
+
+/* ===== 强制修改友链页面顶部封面 ===== */
+
+#page-header.not-top-img,
+#page-header.page,
+#page-header.post-bg {
+
+    background-image: url('/img/beijing.png') !important;
+
+    background-size: cover !important;
+
+    background-position: center !important;
+
+}
+
+/* 只修改友链页顶部封面 */
+
+.flink #page-header {
+
+    background-image: url('/img/beijing.png') !important;
+
+    background-size: cover !important;
+
+    background-position: center !important;
+
+}
+
+/* 右侧标签卡片 */
+#aside-content .card-tag-cloud a {
+    color: #333 !important;
+}
+
+/* 鼠标划过标签 */
+#aside-content .card-tag-cloud a:hover {
+    color: #f28fb5 !important;
+    background: transparent !important;
+    text-decoration: none !important;
+}
+
+#card-toc .toc-link.active {
+    background: #e88aad !important;
+    color: #fff !important;
+}
+
+#card-toc .toc-link:hover {
+    background: #f3b5cc !important;
+    color: #fff !important;
+}
+
+/* =========================
+   友链：彻底去除蓝色特效
+   ========================= */
+
+#article-container .flink .flink-list .flink-list-item,
+#article-container .flink .flink-list .flink-list-item:hover,
+#article-container .flink .flink-list .flink-list-item:focus,
+#article-container .flink .flink-list .flink-list-item:active {
+    background: #fbe3ec !important;
+    background-color: #fbe3ec !important;
+    color: #333 !important;
+    border-color: #f3b5cc !important;
+    box-shadow: 0 0 10px rgba(232, 138, 173, 0.25) !important;
+}
+
+/* 卡片里面的链接 */
+#article-container .flink .flink-list .flink-list-item a,
+#article-container .flink .flink-list .flink-list-item a:hover,
+#article-container .flink .flink-list .flink-list-item a:focus,
+#article-container .flink .flink-list .flink-list-item a:active {
+    color: #e88aad !important;
+    background: transparent !important;
+}
+
+/* 名字 */
+#article-container .flink .flink-list .flink-list-item .flink-item-name,
+#article-container .flink .flink-list .flink-list-item:hover .flink-item-name {
+    color: #e88aad !important;
+}
+
+/* 描述 */
+#article-container .flink .flink-list .flink-list-item .flink-item-desc,
+#article-container .flink .flink-list .flink-list-item:hover .flink-item-desc {
+    color: #666 !important;
+}
+
+/* 彻底关闭 Butterfly 原来的过渡 */
+#article-container .flink .flink-list .flink-list-item,
+#article-container .flink .flink-list .flink-list-item::before,
+#article-container .flink .flink-list .flink-list-item::after {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* 伪元素也锁成粉色 */
+#article-container .flink .flink-list .flink-list-item::before,
+#article-container .flink .flink-list .flink-list-item::after {
+    background: #f3b5cc !important;
+    background-color: #f3b5cc !important;
 }
