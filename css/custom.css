@@ -896,3 +896,151 @@ a:hover,
     background: #f3b5cc !important;
     background-color: #f3b5cc !important;
 }
+
+/* =========================
+   归档时间轴：粉色主题
+   ========================= */
+
+/* 时间轴竖线 */
+#archive .article-sort {
+    border-left-color: #f8c8da !important;
+}
+
+/* 顶部大圆圈 */
+#archive .article-sort-title::before {
+    border-color: #f28fb5 !important;
+}
+
+/* 顶部标题 */
+#archive .article-sort-title {
+    color: #e88aad !important;
+}
+
+/* 年份旁边的圆圈 */
+#archive .article-sort-item.year::before {
+    border-color: #f28fb5 !important;
+}
+
+/* 文章旁边的小圆圈 */
+#archive .article-sort-item::before {
+    border-color: #f6a8c4 !important;
+}
+
+/* 鼠标悬停时的小圆圈 */
+#archive .article-sort-item:hover::before {
+    border-color: #e88aad !important;
+}
+
+/* 文章标题悬停 */
+#archive .article-sort-item-title:hover {
+    color: #e88aad !important;
+}
+
+/* 归档链接悬停 */
+#archive a:hover {
+    color: #e88aad !important;
+}
+
+/* =========================
+   修复归档时间轴残留蓝色
+   ========================= */
+
+/* 时间轴整体竖线 */
+#archive .article-sort {
+    border-left-color: #f5b8d0 !important;
+}
+
+/* 时间轴标题下方的线 */
+#archive .article-sort-title::after {
+    background: #f5b8d0 !important;
+    background-color: #f5b8d0 !important;
+}
+
+/* 年份与文章节点之间的线 */
+#archive .article-sort-item::after,
+#archive .article-sort-item.year::after {
+    background: #f5b8d0 !important;
+    background-color: #f5b8d0 !important;
+}
+
+/* 覆盖主题使用的时间轴颜色变量 */
+#archive {
+    --theme-color: #f5b8d0;
+}
+
+/* =========================
+   全站公告栏小喇叭改粉色
+   ========================= */
+
+#aside-content .card-announcement .item-headline i,
+#aside-content .card-announcement .item-headline svg {
+    color: #e88aad !important;
+    fill: #e88aad !important;
+}
+
+/* =========================
+   最新文章、网站信息图标改粉色
+   ========================= */
+
+/* 最新文章图标 */
+#aside-content .card-recent-post .item-headline i,
+#aside-content .card-recent-post .item-headline svg {
+    color: #e88aad !important;
+    fill: #e88aad !important;
+}
+
+/* 网站信息图标 */
+#aside-content .card-webinfo .item-headline i,
+#aside-content .card-webinfo .item-headline svg {
+    color: #e88aad !important;
+    fill: #e88aad !important;
+}
+
+/* =========================
+   右下角悬浮按钮修改
+   ========================= */
+
+/* 齿轮按钮改成粉色 */
+#rightside #rightside-config {
+    background: #e88aad !important;
+    color: #ffffff !important;
+}
+
+/* 鼠标悬停时变成深粉色 */
+#rightside #rightside-config:hover {
+    background: #d66b99 !important;
+}
+
+/* 隐藏下面的返回顶部箭头 */
+#rightside #go-up {
+    display: none !important;
+}
+/* =========================
+   右下角工具栏上移
+   ========================= */
+
+#rightside {
+    bottom: 110px !important;
+}
+
+/* =========================
+   小游戏页面链接改粉色
+   ========================= */
+
+/* 默认颜色 */
+#article-container a[href*="game-snake"] {
+    color: #e88aad !important;
+    text-decoration: none !important;
+}
+
+/* 鼠标悬停颜色 */
+#article-container a[href*="game-snake"]:hover {
+    color: #d66b99 !important;
+    text-decoration: none !important;
+    background: transparent !important;
+}
+
+/* 去除蓝色下划线 */
+#article-container a[href*="game-snake"]::after {
+    display: none !important;
+}

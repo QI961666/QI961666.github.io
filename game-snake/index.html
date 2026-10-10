@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QI's Snake Game | 贪吃蛇</title>
+  <link rel="stylesheet" href="/game-snake/snake.css">
+</head>
+<body>
+  <main class="game-card">
+    <div class="decoration">✦ ♡ ✧</div>
+    <h1>♡ QI's Snake Game ♡</h1>
+    <p class="subtitle">a little pixel snake game</p>
+
+    <div class="score-board">
+      <span>🍎 SCORE: <b id="score">0</b></span>
+      <span>BEST: <b id="best">0</b></span>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="game" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay">
+        <div id="message">准备好了吗？♡</div>
+        <small id="hint">点击 START 开始游戏</small>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="start">START ♡</button>
+      <button id="pause">PAUSE ❚❚</button>
+      <button id="restart">RESTART ↻</button>
+    </div>
+
+    <p class="instructions">方向键 / WASD 移动 · 空格暂停 · Enter 重新开始</p>
+    <div class="decoration">✧ ♥ ✦</div>
+  </main>
+
+  <script src="/game-snake/snake.js"></script>
+</body>
+</html>

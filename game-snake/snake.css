@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 35px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe6ef;
+  background-image:
+    linear-gradient(#ffffff55 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff55 1px, transparent 1px);
+  background-size: 24px 24px;
+  font-family: "Courier New", monospace;
+  color: #a95379;
+}
+
+.game-card {
+  width: min(100%, 540px);
+  padding: 25px;
+  text-align: center;
+  background: #fff8fb;
+  border: 4px solid #f3a6c4;
+  border-radius: 12px;
+  box-shadow: 9px 9px 0 #eab0c8;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: clamp(24px, 6vw, 35px);
+  color: #e77da8;
+  text-shadow: 3px 3px #ffe0ed;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #bf829b;
+  font-size: 13px;
+}
+
+.decoration {
+  color: #e88aad;
+  letter-spacing: 12px;
+  font-size: 20px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 22px 0 15px;
+  padding: 12px;
+  border: 2px dashed #f3b5cc;
+  background: #ffe5ef;
+  font-weight: bold;
+}
+
+.board-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 5px solid #eaa0be;
+  background: #fff0f6;
+  box-shadow: 5px 5px 0 #f8d1e0;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff0f6d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #ce6c98;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.overlay small {
+  font-size: 13px;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 23px;
+}
+
+button {
+  padding: 12px 16px;
+  border: 3px solid #e88aad;
+  background: #ffd5e6;
+  color: #a94f77;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #eab0c8;
+}
+
+button:hover {
+  background: #f3a6c4;
+  color: white;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.instructions {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 23px;
+}
+
+.back {
+  display: inline-block;
+  margin: 12px 0;
+  color: #d66b99;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: #a94f77;
+}
+
+/* =========================
+   正文和侧边栏：微软雅黑
+   导航栏保持原样
+   ========================= */
+
+/* 页面主要内容 */
+#content-inner,
+#content-inner p,
+#content-inner h1,
+#content-inner h2,
+#content-inner h3,
+#content-inner a,
+#content-inner span,
+#content-inner button {
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
+}
+
+/* 右侧个人信息、公告、最新文章等 */
+#aside-content,
+#aside-content * {
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif !important;
+}
+
+/* 游戏模块居中 */
+.game-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* 游戏内容居中 */
+.game-card h1,
+.game-card .subtitle,
+.game-card .score-board,
+.game-card .buttons,
+.game-card .instructions {
+    text-align: center !important;
+}
+
+/* 修复游戏页面侧边栏的图标 */
+#aside-content i.fas,
+#aside-content i.fa-solid {
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+}
+
+#aside-content i.far,
+#aside-content i.fa-regular {
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free" !important;
+    font-weight: 400 !important;
+}
+
+#aside-content i.fab,
+#aside-content i.fa-brands {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands" !important;
+    font-weight: 400 !important;
+}
